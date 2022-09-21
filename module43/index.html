@@ -13,6 +13,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- theme changer  -->
+    <html data-theme="dark"></html>
+    
     
     <!--Only for demo purpose - no need to add.-->
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
@@ -33,7 +37,7 @@
         </div>
         <div class="flex-none gap-2">
           <div class="form-control hidden md:block">
-            <input type="text" placeholder="Search" class="input input-bordered" />
+            <input type="text" placeholder="Search" class="input hidden md:block input-bordered" />
           </div>
           <div class="dropdown dropdown-end">
             <label tabindex="0" class="btn btn-ghost btn-circle avatar">
@@ -56,6 +60,26 @@
     </nav>
 
 
+    
+    <!-- theme change  -->
+    <select class="theme" data-choose-theme>
+      <option value="dark">Dark</option>
+      <option value="cyberpunk">Cyberpunk</option>
+      <option value="retro">Retro</option>
+      <option value="cupcake">Cupcake</option>
+      <option value="light">Light</option>
+      <option value="fantasy">Fantasy</option>
+      <option value="wireframe">Wireframe</option>
+      <option value="coffee">Coffee</option>
+      <option value="valentine">Valentine</option>
+      <option value="aqua">Aqua</option>
+      <option value="forest">Foerest</option>
+      <option value="halloween">Halloween</option>
+      <option value="lofi">Lofi</option>
+      <option value="lemonade">Lemonade</option>
+    </select>
+    <br>
+    <br>
     <h1 class="title flex justify-center"><img src="./logo.png" /></h1>
     <div id="show-time">0 seconds</div>
     <p id="wpm" class="text-center m-3 text-green-600 text-3xl"></p>
@@ -90,7 +114,7 @@
 
 <!-- </footer> -->
 
-<footer class="footer p-10 bg-base-200 text-base-content flex justify-evenly flex-wrap mx-auto">
+<footer class="footer p-10 bg-base-200 text-base-content flex justify-evenly flex-wrap mx-auto ">
   
   <div>
     <span class="footer-title">Services</span> 
@@ -135,6 +159,6 @@
     <script src="./script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/keyboard.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
   </body>
 </html>
